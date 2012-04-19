@@ -1,0 +1,29 @@
+server {
+	#listen   80; ## listen for ipv4; this line is default and implied
+	#listen   [::]:80 default ipv6only=on; ## listen for ipv6
+
+	root /var/www/bbianco/;
+	index index.html index.htm;
+
+	# Make site accessible from the following URL's
+	server_name localhost *.brianbianco.com *.storedbits.com;
+
+	location /couchdb {
+		rewrite /couchdb/(.*) /$1 break;
+		proxy_pass http://localhost:5984;
+		proxy_redirect off;
+		proxy_set_header Host $host;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	}
+
+	location /shooter {
+		alias /var/www/shooter;
+		try_files $uri $uri/ /shooter/index.html =404;
+	}
+
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to index.html
+		try_files $uri $uri/ /index.html =404;
+	}	
+}
