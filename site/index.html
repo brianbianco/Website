@@ -1,217 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<title>Brian Bianco's Online Resume</title>
-	<meta name="description" content="Brian Bianco's online resume" />
-	<meta name="keywords" content="Resume, Online" />	
-	<meta name="author" content="Brian Bianco" />
-	
-	<style type="text/css" media="all">@import "css/master.css";</style>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/br.js"></script>
-    <script type="text/javascript" src="js/jquery.color.js"></script>
-    <script type="text/javascript" src="js/jquery.clickShow.js"></script>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Brian Bianco</title>
 
-<body>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
     <h1>Brian Bianco</h1>
-    <div id="box1" class="colorbox"></div>
-    <div id="box2" class="colorbox"></div>
-    <div id="box3" class="colorbox"></div>
-    
-    <div id="padder"></div>
-    
-   
-    <!-- Side Navigation  -->
-    <div id="sideNav">   
-        <div class="bg"><a class="nav">Welcome</a></div>
-        <div class="bg"><a class="nav">Employment</a></div>
-        <div class="bg"><a class="nav">Education</a></div>
-        <div class="bg"><a class="nav">Projects</a></div>
-    </div>
-    
-   
-    <!-- Main Content Page -->
-    <div id="content-container">
-     
-     <div id="welcome" class="content" style="display:block">
-     <h2>Welcome!</h2><br/>
-      
-      <img class="me imgbox" src="images/me.png" alt="A picture of some nerd"/>
-       Hello! My name is Brian, and I'm currently living in Belmont, MA<br/><br/>
-      
-       I work for CargoMetrics as a DevOps Engineer.  I consider myself a jack of all trades when it comes to the world of computers.  I have worked on projects as a software engineer, run both academic and corporate networks, and last but not least I love to play with new technology in my free time.<br/><br/>
-       
-       This website primarily serves as my academic and professional work portfolio. It contains information on a few of my projects, resume, and contact information.<br/><br/>
-        
-       <a href="mailto:brian.bianco@gmail.com">brian.bianco@<span style="display:none;">null</span>gmail.com</a>
-      
-       
-       <br/><br/>
-     </div>
-     
-     <div id="employment" class="content">    
-      <h2>Employment</h2>	
-    
+    <ul>
+      <li><a href="https://github.com/brianbianco">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/brian-bianco-137a0529">LinkedIn</a></li>
+    </ul>
 
-	<h3>CargoMetrics - DevOps Engineer</h3>
-	Boston, MA<br/> 
-	1/2012 - Present<br/>
-	</br>
- 
-	<h3>FreeCause - System Administrator / Deployment Engineer</h3>
-	Boston, MA<br/>
-	11/2010 - 1/2012<br/>
-
-	<ul>
-	<li>Migrated Ruby on Rails App to new datacenter</li>
-	<li>Transitioned reporting platform to Cloud (AWS)</li>
-	<li>Consolidated physical servers into a virtualized environment (KVM/QEMU)</li>
-	<li>Created PHP based tools using AWS PHP SDK to deploy code across EC2 Clusters from GIT</li>
-	<li>Designed cluster architecture for PHP web apps</li>
-	<li>Setup Opsview monitoring server and wrote python code to dynamically add nodes using REST API</li>
-	<li>Setup DNS servers (Bind9)</li>
-	<li>Deployed REDIS Master/Slave setup and backup process</li>
-	<li>Setup and migrated data to hardware NAS from Microsoft SB Server</li>
-	<li>Restored neglected Microsoft SBS Server to normal functionality</li>
-	<li>Created proper documentation for new server setups and existing servers</li>
-	<li>Created puppet manifests for Dev VM deployment</li>
-	<li>Wrote PHP data import scripts for main reporting process</li>
-	<li>Wrote BASH scripts to create and persist SSH tunnels between data centers</li>
-	<li>Create and maintain Nginx configurations</li>
-	</ul>
-
-	<h3>Store Manager - Gamestop, Inc.</h3>
-	LI, NY<br/> 
-	6/2007 - 11/2010<br/>
-	<ul>
-	<li>Managed a store of 10+ employees including hiring, terminations, interviewing.</li>
-	<li>Managed a store in the top 15% of the company</li>
-	</ul>
-      
-	<h3>Associate / IT Management - B.F. Associates, Inc.</h3>
-	LI, NY<br/>
-	3/2005 – 2008<br/>      
-	<ul>
-	<li>Provided troubleshooting and tech support for mobile users</li>
-	<li>Handled purchasing and support of all computers and software</li>
-	<li>Provided IT consulting services to outside corporations (LAMP setups, Web Design, Troubleshooting)</li>
-	</ul>
-      
-      <h3>Network Administrator - Cohen &amp; Steers Capital Management</h3>
-      NY, NY<br/>
-      9/2003 – 2/2005<br/>
-      <ul>
-	<li>Supported over 100 local users and 15 remote users</li>
-	<li>In charge of purchasing, setup and tracking of all computer hardware</li>
-	<li>Planned and Implemented Sarbanes-Oxley compliance for IPO preparation and execution.</li>
-	<li>Installed and supported users for the Charles River Investment Management System</li>
-	<li>Part of a team that integrated Charles River with Omgeo Oasys and Advent Axys</li>
-	<li>Administered approximately 15 Windows 200/2003 Servers (DNS, Active Directory, MSSQL, File Servers)</li>
-	<li>Deployed SQL 2000 cluster with 3 nodes running on Windows Server 2003</li>
-	<li>Deployed Email perimeter management (Anti-spam / Anti-Virus)</li>
-	<li>Performed routine security audits with Nessus, Ettercap, and Nmap</li>
-	<li>Deployed and administered Cisco Works</li>
-	<li>Part of a team that planned and implemented off site disaster recovery facilities</li>
-	<li>Implemented SSL VPN (Neoteris / Juniper)</li>
-	<li>General maintenance of Cisco PIX 515 firewall rules</li>
-	<li>Implemented NYFIX connectivity to allow FIX trading</li>
-      </ul>
-      
-      <h3>Computer Lab Administrator - Plattsburgh State University</h3>
-      Plattsburgh, NY<br/>
-      1/2003 - 5/2003<br/>
-      <ul>
-      <li>Maintained a 40-workstation dual boot departmental computer lab for student use.</li>
-      <li>Maintained a Windows 2000 and Redhat Linux 7.2 Server</li>
-      <li>Maintained Active Directory along with NIS services for connectivity from Linux</li>
-      <li>Installed and Maintained departmental CVS Server</li>
-      <li>Prototyped new lab configuration using dual boot workstations running Redhat 8.0 and Windows 2000. (RIS for Windows Setup and NFS with Kickstart for Redhat).</li>
-      <li>The Server acted as Domain Controller with Active Directory, DNS, and DHCP</li>
-      </ul>
-
-      <h3>Intern - HBS Corp Inc.</h3>
-      Nesconset, NY <br/>
-      6/2001 – 9/2003 (Summers and Weekends)<br/>
-      
-      <ul>
-      <li>Developed corporate website using HTML, CSS, ASP and SQL</li>
-      <li>Assisted with intra-company computer support issues.</li>
-      </ul>
-     </div>
-    <!-- End Employment Content -->
-    
-   
-    <div id="education" class="content"> 
-      <h2>Education</h2>
-      <div class="edu">
-      <h3>B.S. in Computer Science, Minor in Mathematics </h3>
-      Plattsburgh State University - May 2003<br/>
-      </div>
-      <img class="diploma" src="images/diploma_thumb.png" alt="expensive paper"/>
-      <img class="award" src="images/award_thumb.png" alt="CSC award"/>
-      
-      
-      <ul style="clear: right;">
-      <li>Certificate of Achievement in Computer Science (1 awarded for each graduating class) and Deans List</li>
-      <li>Developed a robotic car that navigates a maze following street signs using a camera connected to a PC-104 Single Board Computer running Linux, with client/server system architecture using IEEE 802.11 wireless networking.  Utilized Extreme Programming for project management and development.</li>
-      <li>Developed a Swing-based windowing system for Java Applications</li>      
-      <li>Developed a course sign-ups system using web pages dynamically generated from an Oracle database with ASP.</li>
-      <li>Developed a preemptive CPU scheduler for the Motorola M6811 micro controller.</li>
-      </ul>
-    
-    </div>   
-    <!-- End Education Content -->
-
-    <div id="projects" class="content">
-    <h2>Projects</h2><br/>
-		<div>
-			Redisio Chef Cookbook<br/>
-			<div class="project-redisio generic project-content">
-        An open source chef cookbook for the installation and management of redis servers <a href="http://github.com/brianbianco/redisio">Redisio Github Project</a>
-	      <br/>	
-    		<br/>
-			</div>
-    	</div>
-
-		<div>
-			javascript quad tree implementation<br/>
-			<div class="project-quadtree generic project-content">
-			While creating my shooting game it quickly became apparent that there was way too much slow down occurring during the bullet collision detection.  That meant it was time to create some type of data structure to reduce the amount of comparisons that would occur.  Click right <a href="shooter/quadtree.html">here</a> to see it<br/>
-    		<br/>
-			</div>
-    	</div>
-
-		<div>
-			jQuery based Shooter<br/>
-			<div class="project-shooter generic project-content">
-			After discovering how great jQuery was, I decided I wanted to see what kind of a game I could make using it.  I hadn't found any jQuery based shooters 	that didn't suffer from all sorts of different problems.  I set out to make my own, and <a href="/shooter">these</a> are the results.<br/>
-			<br/>	
-			</div>
-		</dfiv>
-
-    	<div>
- 
-    	<div>
-    		showClick jQuery plugin<br/>
-    		<div class="project-showclick generic project-content">
-    		I went about trying to find a nice light box plugin for the images I was posting on my sight but was a bit turned off by how many requirements most of them had.  I didn't want anything that involved adding plugins beyond the light box itself, extra images and all sorts of other junk.  I decided this was a good time to not only create what I wanted but educate myself on jQuery plugins.  Here is the <a href="js/jquery.clickShow.js">result</a> (which is of course used on my site)
-			</div>
-    	</div>
-    	<br/>
- 
-    </div>   
-    <!-- End Project Content -->    
-  
-    </div>
-    <!-- End Content-Container -->    
-    
-    <!-- Footer -->
-    <div id="footer">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Brian Bianco
-     <!--<a href="http://validator.w3.org/check?uri=www.brianbianco.com"><img class='footerimg' src="images/w3cValidation.png" alt="Valid XHTML 1.0 Transitional"/></a>-->
-     <a href="http://www.twitter.com/brianwbianco"><img class='footerimg' src="http://twitter-badges.s3.amazonaws.com/t_mini-c.png" alt="Follow brianwbianco on Twitter"/></a>
-    </div>  
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
